@@ -33,14 +33,16 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(189, 154);
+            this.dateTimePicker1.Location = new System.Drawing.Point(791, 85);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(298, 26);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // errorProvider1
@@ -50,9 +52,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(122, 154);
+            this.checkBox1.Location = new System.Drawing.Point(314, 187);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.Size = new System.Drawing.Size(113, 24);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -60,19 +63,31 @@
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(469, 154);
+            this.checkedListBox1.Location = new System.Drawing.Point(685, 352);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.Size = new System.Drawing.Size(502, 326);
             this.checkedListBox1.TabIndex = 2;
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(116, 352);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(311, 223);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.dateTimePicker1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -87,6 +102,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 
